@@ -8,12 +8,15 @@
 </head>
 <body>
   <div id="app">
-
-    
+    <button @click="myFunction">Random Email</button>
+    <ul v-for="(element) in emailRandom">
+      <li>{{element}}</li>
+    </ul>
+   
   </div>
   
-  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 </html>
